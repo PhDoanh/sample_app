@@ -15,6 +15,10 @@ class ActiveSupport::TestCase
     !session[:user_id].nil?
   end
 
+  def login_as user
+    session[:user_id] = user.id
+  end
+
   def self.digest string
     cost = if ActiveModel::SecurePassword.min_cost
              BCrypt::Engine::MIN_COST
@@ -23,5 +27,17 @@ class ActiveSupport::TestCase
            end
 
     BCrypt::Password.create(string, cost:)
+  end
+end
+
+class ActionDispatch::IntegrationTest
+  def login_as user, password: "password", remember_me: "1"
+    post login_path, params: {
+      session: {
+        email: user.email,
+        password:,
+        remember_me:
+      }
+    }
   end
 end

@@ -70,6 +70,7 @@ ja:
         email: "メールアドレス"
         password: "パスワード"
         submit: "ログイン"
+        remember_me: "ログイン状態を保持する"
       signup: "今すぐ登録!"
       signup_prompt: "新規ユーザーですか?"
   shared:

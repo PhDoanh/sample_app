@@ -47,6 +47,9 @@ vi:
       home: "Trang chủ"
       help: "Trợ giúp"
       log_in: "Đăng nhập"
+      log_out: "Đăng xuất"
+      settings: "Cài đặt"
+      profile: "Hồ sơ"
     footer:
       the: ""
       tutorial_link: "Ruby on Rails Tutorial"
@@ -55,6 +58,20 @@ vi:
       about: "Giới thiệu"
       contact: "Liên hệ"
       news: "Tin tức"
+  sessions:
+    create:
+      flash_success: "Bạn đã đăng nhập!"
+      flash_danger: "Đăng nhập thất bại. Vui lòng kiểm tra lại thông tin."
+    new:
+      title: "Đăng nhập"
+      heading: "Đăng nhập"
+      description: "Đây là trang đăng nhập cho người dùng hiện tại."
+      form:
+        email: "Địa chỉ Email"
+        password: "Mật khẩu"
+        submit: "Đăng nhập"
+      signup: "Đăng ký ngay!"
+      signup_prompt: "Người dùng mới?"
   shared:
     error_messages:
       message:

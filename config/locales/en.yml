@@ -47,6 +47,9 @@ en:
       home: "Home"
       help: "Help"
       log_in: "Log in"
+      log_out: "Log out"
+      settings: "Settings"
+      profile: "Profile"
     footer:
       the: "The"
       tutorial_link: "Ruby on Rails Tutorial"
@@ -60,6 +63,20 @@ en:
       message:
         one: "The form contains 1 error."
         other: "The form contains %{count} errors."
+  sessions:
+    create:
+      flash_success: "You have successfully logged in."
+      flash_danger: "Invalid email or password."
+    new:
+      title: "Log in"
+      heading: "Log in"
+      description: "This is a login page for existing user."
+      form:
+        email: "Email"
+        password: "Password"
+        submit: "Log in"
+      signup: "Sign up now!"
+      signup_prompt: "New user?"
   errors:
     messages:
       blank: "can't be blank"

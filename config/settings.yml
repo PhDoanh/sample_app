@@ -26,6 +26,7 @@ user:
   gravatar:
     medium_size: 80
     small_size: 50
+    tiny_size: 30
   password_reset_expire_time: 2 # hours
 micropost:
   content:

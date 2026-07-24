@@ -7,6 +7,19 @@
         <%= @user.name %>
       </h1>
     </section>
+    <section class="stats">
+      <%= render "shared/stats" %>
+      <% if @users.any? %>
+        <div class="user_avatars">
+          <% @users.each do |user| %>
+            <%= link_to gravatar_for(user, size: Settings.user.gravatar.tiny_size), user %>
+          <% end %>
+        </div>
+      <% end %>
+    </section>
+    <section class="follow_form">
+      <%= render "follow_form" %>
+    </section>
   </aside>
   <% if @user.microposts.any? %>
     <div class="col-md-8">

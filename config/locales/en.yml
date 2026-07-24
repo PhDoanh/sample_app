@@ -28,6 +28,7 @@ en:
       description: "Contact the Ruby on Rails Tutorial about the sample app at the"
       contact_page_link: "contact page"
   users:
+    # from controllers
     create:
       flash_success: "Welcome to the Sample App!"
       flash_info: "Please check your email to activate your account."
@@ -38,6 +39,12 @@ en:
       flash_danger: "Error deleting user."
     logged_in_user:
       flash_danger: "Please log in."
+    following:
+      title: "Following"
+    followers:
+      title: "Followers"
+
+    # from views
     index:
       title: "All users"
       heading: "All users"
@@ -65,6 +72,10 @@ en:
     user:
       delete: "Delete"
       confirm_delete: "Are you sure?"
+    follow:
+      submit: "Follow"
+    unfollow:
+      submit: "Unfollow"
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
@@ -100,13 +111,16 @@ en:
         one: "The form contains 1 error."
         other: "The form contains %{count} errors."
     user_info:
-      view_profile: "view my profile"
+      view_profile: "view profile"
       micropost_count:
         one: "1 micropost"
         other: "%{count} microposts"
     micropost_form:
       placeholder: "Compose new micropost..."
       submit: "Post"
+    stats:
+      following: "following"
+      followers: "followers"
   sessions:
     create:
       flash_success: "You have successfully logged in."

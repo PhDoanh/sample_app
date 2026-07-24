@@ -1,0 +1,3 @@
+<%= form_with(model: current_user.active_relationship_with(@user), html: { method: :delete }) do |f| %>
+  <%= f.submit t(".submit"), class: "btn" %>
+<% end %>

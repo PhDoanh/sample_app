@@ -14,5 +14,6 @@ class Micropost < ApplicationRecord
     size: {less_than: Settings.micropost.image.max_size.megabytes}
   )
 
-  default_scope ->{order(created_at: :desc)}
+  scope :recent, ->{order(created_at: :desc)}
+  scope :feed, ->(user){where(user_id: user.following_ids << user.id)}
 end

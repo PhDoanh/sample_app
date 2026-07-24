@@ -29,16 +29,37 @@ ja:
   users:
     create:
       flash_success: "サンプルアプリへようこそ!"
+    update:
+      flash_success: "プロフィールが更新されました"
+    destroy:
+      flash_success: "ユーザーを削除しました"
+      flash_danger: "ユーザーの削除に失敗しました。"
+    logged_in_user:
+      flash_danger: "ログインしてください。"
+    index:
+      title: "すべてのユーザー"
+      heading: "すべてのユーザー"
+      description: "これはすべてのユーザーのインデックスページです。"
     new:
       title: "登録"
       heading: "登録"
       description: "こちらは新規ユーザー登録ページです。"
       form:
-        name: "名前"
-        email: "メールアドレス"
-        password: "パスワード"
-        password_confirmation: "確認用パスワード"
         submit: "アカウントを作成する"
+    edit:
+      title: "ユーザーを編集"
+      heading: "プロフィールを更新"
+      description: "これは既存ユーザーの編集ページです。"
+      form:
+        submit: "変更を保存"
+    form:
+      name: "名前"
+      email: "メールアドレス"
+      password: "パスワード"
+      password_confirmation: "確認用パスワード"
+    user:
+      delete: "削除"
+      confirm_delete: "本当に削除しますか？"
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial サンプルアプリケーション"
@@ -46,6 +67,7 @@ ja:
       logo: "サンプルアプリ"
       home: "ホーム"
       help: "ヘルプ"
+      users: "ユーザー"
       log_in: "ログイン"
       log_out: "ログアウト"
       settings: "設定"

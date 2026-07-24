@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
       reset_session
       remember_or_forget user
       log_in user
-      redirect_to user
+      redirect_back_or user
     else
       flash.now[:danger] = t(".flash_danger")
       render "new", status: :unprocessable_entity

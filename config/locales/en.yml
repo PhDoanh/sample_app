@@ -29,16 +29,37 @@ en:
   users:
     create:
       flash_success: "Welcome to the Sample App!"
+    update:
+      flash_success: "Profile updated"
+    destroy:
+      flash_success: "User deleted"
+      flash_danger: "Error deleting user."
+    logged_in_user:
+      flash_danger: "Please log in."
+    index:
+      title: "All users"
+      heading: "All users"
+      description: "This is the index page for all users."
     new:
       title: "Sign up"
       heading: "Sign up"
       description: "This is a signup page for new user."
       form:
-        name: "Name"
-        email: "Email"
-        password: "Password"
-        password_confirmation: "Confirmation"
         submit: "Create my account"
+    edit:
+      title: "Edit user"
+      heading: "Update your profile"
+      description: "This is a edit page for existing user."
+      form:
+        submit: "Save changes"
+    form:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Confirmation"
+    user:
+      delete: "Delete"
+      confirm_delete: "Are you sure?"
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
@@ -46,6 +67,7 @@ en:
       logo: "sample app"
       home: "Home"
       help: "Help"
+      users: "Users"
       log_in: "Log in"
       log_out: "Log out"
       settings: "Settings"

@@ -29,6 +29,7 @@ ja:
   users:
     create:
       flash_success: "サンプルアプリへようこそ!"
+      flash_info: "アカウントを有効化するには、メールを確認してください。"
     update:
       flash_success: "プロフィールが更新されました"
     destroy:
@@ -80,10 +81,16 @@ ja:
       about: "概要"
       contact: "お問い合わせ"
       news: "ニュース"
+  shared:
+    error_messages:
+      message:
+        one: "フォームに1件のエラーがあります。"
+        other: "フォームに%{count}件のエラーがあります。"
   sessions:
     create:
       flash_success: "ログインしました!"
       flash_danger: "メールアドレスまたはパスワードが正しくありません。"
+      flash_warning: "アカウントが有効化されていません。メールを確認してアクティベーションリンクをクリックしてください。"
     new:
       title: "ログイン"
       heading: "ログイン"
@@ -95,11 +102,22 @@ ja:
         remember_me: "ログイン状態を保持する"
       signup: "今すぐ登録!"
       signup_prompt: "新規ユーザーですか?"
-  shared:
-    error_messages:
-      message:
-        one: "フォームに1件のエラーがあります。"
-        other: "フォームに%{count}件のエラーがあります。"
+  account_activations:
+    flash_success: "アカウントが有効化されました!"
+    flash_danger: "無効なアクティベーションリンクです"
+  user_mailer:
+    account_activation:
+      subject: "アカウントの有効化"
+      heading: "アカウントを有効化する"
+      greeting: "%{name}さん、こんにちは！"
+      description: "サンプルアプリへようこそ！下のリンクをクリックしてアカウントを有効化してください:"
+      activate_account: "アカウントを有効化する"
+    password_reset:
+      subject: "パスワードのリセット"
+      heading: "パスワードをリセットする"
+      greeting: "%{name}さん、こんにちは！"
+      description: "パスワードのリセットが要求されました。下のリンクをクリックして続行してください:"
+      reset_password: "パスワードをリセットする"
   errors:
     messages:
       blank: "を入力してください"

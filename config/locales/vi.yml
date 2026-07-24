@@ -29,6 +29,7 @@ vi:
   users:
     create:
       flash_success: "Chào mừng bạn đến với Ứng dụng mẫu!"
+      flash_info: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản."
     update:
       flash_success: "Hồ sơ đã được cập nhật"
     destroy:
@@ -80,10 +81,16 @@ vi:
       about: "Giới thiệu"
       contact: "Liên hệ"
       news: "Tin tức"
+  shared:
+    error_messages:
+      message:
+        one: "Biểu mẫu chứa 1 lỗi."
+        other: "Biểu mẫu chứa %{count} lỗi."
   sessions:
     create:
       flash_success: "Bạn đã đăng nhập!"
       flash_danger: "Đăng nhập thất bại. Vui lòng kiểm tra lại thông tin."
+      flash_warning: "Tài khoản chưa được kích hoạt. Vui lòng kiểm tra email của bạn để lấy liên kết kích hoạt."
     new:
       title: "Đăng nhập"
       heading: "Đăng nhập"
@@ -95,11 +102,22 @@ vi:
         remember_me: "Ghi nhớ trạng thái đăng nhập"
       signup: "Đăng ký ngay!"
       signup_prompt: "Người dùng mới?"
-  shared:
-    error_messages:
-      message:
-        one: "Biểu mẫu chứa 1 lỗi."
-        other: "Biểu mẫu chứa %{count} lỗi."
+  account_activations:
+    flash_success: "Tài khoản đã được kích hoạt!"
+    flash_danger: "Liên kết kích hoạt không hợp lệ"
+  user_mailer:
+    account_activation:
+      subject: "Kích hoạt tài khoản"
+      heading: "Kích hoạt tài khoản"
+      greeting: "Xin chào %{name}!"
+      description: "Chào mừng bạn đến với Ứng dụng mẫu! Click vào liên kết dưới đây để kích hoạt tài khoản của bạn:"
+      activate_account: "Kích hoạt tài khoản"
+    password_reset:
+      subject: "Khôi phục mật khẩu"
+      heading: "Khôi phục mật khẩu"
+      greeting: "Xin chào %{name}!"
+      description: "Bạn đã yêu cầu khôi phục mật khẩu. Click vào liên kết dưới đây để tiếp tục:"
+      reset_password: "Khôi phục mật khẩu"
   errors:
     messages:
       blank: "không được để trống"

@@ -11,13 +11,17 @@ url:
   news: "https://news.railstutorial.org"
   rubyonrails: "https://rubyonrails.org"
   guides: "https://guides.rubyonrails.org"
+  gravatar: "https://secure.gravatar.com/avatar/%{gravatar_id}?s=%{size}"
 path:
   rails_logo: "rails.png"
 regex:
-  email: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-name:
-  max_length: 50
-email:
-  max_length: 255
-password:
-  min_length: 6
+  email: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+user:
+  name:
+    max_length: 50
+  email:
+    max_length: 255
+  password:
+    min_length: 6
+  gravatar:
+    size: 80

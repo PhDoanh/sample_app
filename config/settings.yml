@@ -1,0 +1,15 @@
+app_name: "Sample App"
+base_title: "Ruby on Rails Tutorial Sample App"
+default_locale: "en"
+available_locales:
+  - "en"
+  - "vi"
+  - "ja"
+url:
+  tutorial: "https://railstutorial.org"
+  author: "https://www.michaelhartl.com"
+  news: "https://news.railstutorial.org"
+  rubyonrails: "https://rubyonrails.org"
+  guides: "https://guides.rubyonrails.org"
+path:
+  rails_logo: "rails.png"

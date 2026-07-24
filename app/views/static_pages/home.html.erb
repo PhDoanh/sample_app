@@ -1,0 +1,12 @@
+<% provide(:title, t(".title")) %>
+<div class="center hero">
+  <h1><%= t(".welcome") %></h1>
+  <h2>
+    <%= t(".description") %>
+
+    <a href="<%= Settings.url.guides %>"><%= t(".tutorial_link") %></a> <%= t(".sample_app") %>
+  </h2>
+  <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag(Settings.path.rails_logo, alt: "Rails logo", width: 200), Settings.url.rubyonrails %>

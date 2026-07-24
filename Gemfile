@@ -43,7 +43,11 @@ gem "tzinfo-data", platforms: %i(mingw mswin x64_mingw jruby)
 gem "bootsnap", require: false
 
 # Use Sass to process CSS
-# gem "sassc-rails"
+gem "bootstrap-sass"
+gem "sassc-rails"
+
+# Centralized configuration management
+gem "config"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html]
 # gem "image_processing", "~> 1.2"
@@ -70,6 +74,7 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html]
   gem "capybara"
+  gem "rails-controller-testing"
   gem "selenium-webdriver"
   gem "webdrivers"
 end

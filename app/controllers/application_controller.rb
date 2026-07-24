@@ -26,4 +26,12 @@ class ApplicationController < ActionController::Base
   def admin_user
     redirect_to root_path, status: :see_other unless current_user.admin?
   end
+
+  def load_feed
+    @pagy, @feed_items = pagy(
+      :offset,
+      current_user.feed,
+      limit: Settings.microposts_per_page
+    )
+  end
 end

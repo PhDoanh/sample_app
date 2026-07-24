@@ -7,6 +7,7 @@ ja:
       tutorial_link: "Ruby on Rails Tutorial"
       sample_app: "のサンプルアプリケーションです。"
       signup: "今すぐ登録!"
+      micropost_feed: "マイクロポストフィード"
     help:
       title: "ヘルプ"
       heading: "ヘルプ"
@@ -53,6 +54,9 @@ ja:
       description: "これは既存ユーザーの編集ページです。"
       form:
         submit: "変更を保存"
+    show:
+      microposts:
+        heading: "マイクロポスト (%{count})"
     form:
       name: "名前"
       email: "メールアドレス"
@@ -81,11 +85,28 @@ ja:
       about: "概要"
       contact: "お問い合わせ"
       news: "ニュース"
+  microposts:
+    create:
+      flash_success: "マイクロポストが作成されました!"
+    destroy:
+      flash_success: "マイクロポストが削除されました!"
+    micropost:
+      timestamp: "%{time}前に投稿"
+      delete: "削除"
+      confirm_delete: "本当に削除しますか？"
   shared:
     error_messages:
       message:
         one: "フォームに1件のエラーがあります。"
         other: "フォームに%{count}件のエラーがあります。"
+    user_info:
+      view_profile: "プロフィールを表示"
+      micropost_count:
+        one: "1件のマイクロポスト"
+        other: "%{count}件のマイクロポスト"
+    micropost_form:
+      placeholder: "新しいマイクロポストを投稿..."
+      submit: "投稿"
   sessions:
     create:
       flash_success: "ログインしました!"
@@ -143,14 +164,6 @@ ja:
       greeting: "%{name}さん、こんにちは！"
       description: "パスワードのリセットが要求されました。下のリンクをクリックして続行してください:"
       reset_password: "パスワードをリセットする"
-  errors:
-    messages:
-      blank: "を入力してください"
-      invalid: "は有効ではありません"
-      taken: "はすでに使用されています"
-      too_long: "は%{count}文字以内で入力してください"
-      too_short: "は%{count}文字以上で入力してください"
-      confirmation: "は%{attribute}と一致しません"
   activerecord:
     attributes:
       user:
@@ -158,3 +171,16 @@ ja:
         email: "メールアドレス"
         password: "パスワード"
         password_confirmation: "確認用パスワード"
+      micropost:
+        content: "内容"
+        image: "画像"
+    errors:
+      models:
+        micropost:
+          attributes:
+            image:
+              content_type: "有効な画像形式である必要があります"
+              size: "5MB未満である必要があります"
+  js:
+    micropost:
+      image_too_large: "画像サイズは5MB未満である必要があります。"

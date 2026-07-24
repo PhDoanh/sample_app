@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
+
   attr_accessor :reset_token, :remember_token, :activation_token
 
   before_save :downcase_email
@@ -25,7 +27,7 @@ class User < ApplicationRecord
     allow_nil: true
   )
 
-  scope :newest, ->{order(created_at: :desc)}
+  scope :newest, ->{order(created_at: :desc).where(activated: true)}
 
   def self.digest string
     cost = if ActiveModel::SecurePassword.min_cost
@@ -83,7 +85,11 @@ class User < ApplicationRecord
   end
 
   def password_reset_expired?
-    reset_sent_at < Settings.user.password_reset_expired_time.hours.ago
+    reset_sent_at < Settings.user.password_reset_expire_time.hours.ago
+  end
+
+  def feed
+    microposts
   end
 
   private

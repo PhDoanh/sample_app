@@ -8,10 +8,11 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= render "layouts/shim" %>
+    <%= include_gon init: true, camel_case: true, camel_depth: :recursive %>
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body data-locale="<%= I18n.locale %>">
     <%= render "layouts/header" %>
     <div class="container">
       <% flash.each do |message_type, message| %>

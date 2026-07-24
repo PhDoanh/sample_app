@@ -7,6 +7,7 @@ vi:
       tutorial_link: "Ruby on Rails Tutorial"
       sample_app: "ứng dụng mẫu."
       signup: "Đăng ký ngay!"
+      micropost_feed: "Dòng thời gian"
     help:
       title: "Trợ giúp"
       heading: "Trợ giúp"
@@ -53,6 +54,9 @@ vi:
       description: "Đây là trang chỉnh sửa cho người dùng hiện tại."
       form:
         submit: "Lưu thay đổi"
+    show:
+      microposts:
+        heading: "Bài đăng (%{count})"
     form:
       name: "Tên"
       email: "Địa chỉ Email"
@@ -81,11 +85,28 @@ vi:
       about: "Giới thiệu"
       contact: "Liên hệ"
       news: "Tin tức"
+  microposts:
+    create:
+      flash_success: "Bài đăng đã được tạo!"
+    destroy:
+      flash_success: "Bài đăng đã được xóa!"
+    micropost:
+      timestamp: "Đăng %{time} trước."
+      delete: "xóa"
+      confirm_delete: "Bạn chắc chắn muốn xóa chứ?"
   shared:
     error_messages:
       message:
         one: "Biểu mẫu chứa 1 lỗi."
         other: "Biểu mẫu chứa %{count} lỗi."
+    user_info:
+      view_profile: "xem hồ sơ của tôi"
+      micropost_count:
+        one: "1 bài đăng"
+        other: "%{count} bài đăng"
+    micropost_form:
+      placeholder: "Viết bài đăng mới..."
+      submit: "Đăng"
   sessions:
     create:
       flash_success: "Bạn đã đăng nhập!"
@@ -143,14 +164,6 @@ vi:
       greeting: "Xin chào %{name}!"
       description: "Bạn đã yêu cầu khôi phục mật khẩu. Click vào liên kết dưới đây để tiếp tục:"
       reset_password: "Khôi phục mật khẩu"
-  errors:
-    messages:
-      blank: "không được để trống"
-      invalid: "không hợp lệ"
-      taken: "đã được sử dụng"
-      too_long: "quá dài (tối đa %{count} ký tự)"
-      too_short: "quá ngắn (tối thiểu %{count} ký tự)"
-      confirmation: "không khớp với %{attribute}"
   activerecord:
     attributes:
       user:
@@ -158,3 +171,16 @@ vi:
         email: "Email"
         password: "Mật khẩu"
         password_confirmation: "Xác nhận mật khẩu"
+      micropost:
+        content: "Nội dung"
+        image: "Hình ảnh"
+    errors:
+      models:
+        micropost:
+          attributes:
+            image:
+              content_type: "phải ở định dạng ảnh hợp lệ"
+              size: "phải nhỏ hơn 5MB"
+  js:
+    micropost:
+      image_too_large: "Kích thước ảnh phải nhỏ hơn 5MB."

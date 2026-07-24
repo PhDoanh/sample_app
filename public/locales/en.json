@@ -1,0 +1,9 @@
+{
+  "en": {
+    "js": {
+      "micropost": {
+        "image_too_large": "Image size should be less than 5MB."
+      }
+    }
+  }
+}

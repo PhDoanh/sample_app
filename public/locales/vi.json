@@ -1,0 +1,9 @@
+{
+  "vi": {
+    "js": {
+      "micropost": {
+        "image_too_large": "Kích thước ảnh phải nhỏ hơn 5MB."
+      }
+    }
+  }
+}

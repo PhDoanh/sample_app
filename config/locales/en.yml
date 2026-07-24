@@ -7,6 +7,7 @@ en:
       tutorial_link: "Ruby on Rails Tutorial"
       sample_app: "sample app."
       signup: "Sign up now!"
+      micropost_feed: "Micropost Feed"
     help:
       title: "Help"
       heading: "Help"
@@ -53,6 +54,9 @@ en:
       description: "This is a edit page for existing user."
       form:
         submit: "Save changes"
+    show:
+      microposts:
+        heading: "Microposts (%{count})"
     form:
       name: "Name"
       email: "Email"
@@ -81,11 +85,28 @@ en:
       about: "About"
       contact: "Contact"
       news: "News"
+  microposts:
+    create:
+      flash_success: "Micropost created!"
+    destroy:
+      flash_success: "Micropost deleted"
+    micropost:
+      timestamp: "Posted %{time} ago."
+      delete: "delete"
+      confirm_delete: "Are you sure?"
   shared:
     error_messages:
       message:
         one: "The form contains 1 error."
         other: "The form contains %{count} errors."
+    user_info:
+      view_profile: "view my profile"
+      micropost_count:
+        one: "1 micropost"
+        other: "%{count} microposts"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      submit: "Post"
   sessions:
     create:
       flash_success: "You have successfully logged in."
@@ -143,14 +164,6 @@ en:
       greeting: "Hi %{name},"
       description: "You have requested to reset your password. Click the link below to proceed:"
       reset_password: "Reset my password"
-  errors:
-    messages:
-      blank: "can't be blank"
-      invalid: "is invalid"
-      taken: "has already been taken"
-      too_long: "is too long (maximum is %{count} characters)"
-      too_short: "is too short (minimum is %{count} characters)"
-      confirmation: "doesn't match confirmation"
   activerecord:
     attributes:
       user:
@@ -158,3 +171,16 @@ en:
         email: "Email"
         password: "Password"
         password_confirmation: "Confirmation"
+      micropost:
+        content: "Content"
+        image: "Image"
+    errors:
+      models:
+        micropost:
+          attributes:
+            image:
+              content_type: "must be a valid image format"
+              size: "should be less than 5MB"
+  js:
+    micropost:
+      image_too_large: "Image size should be less than 5MB."

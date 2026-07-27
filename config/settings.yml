@@ -14,11 +14,10 @@ url:
 path:
   rails_logo: "rails.png"
 regex:
-  email: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-user:
-  name:
-    max_length: 50
-  email:
-    max_length: 255
-  password:
-    min_length: 6
+  email: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+name:
+  max_length: 50
+email:
+  max_length: 255
+password:
+  min_length: 6

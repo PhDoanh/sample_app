@@ -27,18 +27,10 @@ ja:
       description: "サンプルアプリに関するお問い合わせは"
       contact_page_link: "お問い合わせページ"
   users:
-    create:
-      flash_success: "サンプルアプリへようこそ!"
     new:
       title: "登録"
       heading: "登録"
       description: "こちらは新規ユーザー登録ページです。"
-      form:
-        name: "名前"
-        email: "メールアドレス"
-        password: "パスワード"
-        password_confirmation: "確認用パスワード"
-        submit: "アカウントを作成する"
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial サンプルアプリケーション"
@@ -55,23 +47,3 @@ ja:
       about: "概要"
       contact: "お問い合わせ"
       news: "ニュース"
-  shared:
-    error_messages:
-      message:
-        one: "フォームに1件のエラーがあります。"
-        other: "フォームに%{count}件のエラーがあります。"
-  errors:
-    messages:
-      blank: "を入力してください"
-      invalid: "は有効ではありません"
-      taken: "はすでに使用されています"
-      too_long: "は%{count}文字以内で入力してください"
-      too_short: "は%{count}文字以上で入力してください"
-      confirmation: "は%{attribute}と一致しません"
-  activerecord:
-    attributes:
-      user:
-        name: "名前"
-        email: "メールアドレス"
-        password: "パスワード"
-        password_confirmation: "確認用パスワード"

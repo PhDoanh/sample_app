@@ -1,0 +1,49 @@
+ja:
+  static_pages:
+    home:
+      title: "ホーム"
+      welcome: "Sample Appへようこそ"
+      description: "これは"
+      tutorial_link: "Ruby on Rails Tutorial"
+      sample_app: "のサンプルアプリケーションです。"
+      signup: "今すぐ登録!"
+    help:
+      title: "ヘルプ"
+      heading: "ヘルプ"
+      description: "Ruby on Rails Tutorialのヘルプについては"
+      help_page_link: "Rails Tutorialヘルプページ"
+      description2: "このサンプルアプリのヘルプについては、"
+      book_link: "Ruby on Rails Tutorialの書籍"
+      book_word: "を参照してください。"
+    about:
+      title: "概要"
+      heading: "概要"
+      description: "は、Web開発を学ぶための書籍とスクリーンキャストシリーズです"
+      with: "そして"
+      this_is: "これはチュートリアルのサンプルアプリケーションです。"
+    contact:
+      title: "お問い合わせ"
+      heading: "お問い合わせ"
+      description: "サンプルアプリに関するお問い合わせは"
+      contact_page_link: "お問い合わせページ"
+  users:
+    new:
+      title: "登録"
+      heading: "登録"
+      description: "こちらは新規ユーザー登録ページです。"
+  layouts:
+    application:
+      base_title: "Ruby on Rails Tutorial サンプルアプリケーション"
+    header:
+      logo: "サンプルアプリ"
+      home: "ホーム"
+      help: "ヘルプ"
+      log_in: "ログイン"
+    footer:
+      the: ""
+      tutorial_link: "Ruby on Rails Tutorial"
+      by: ""
+      author_link: "Michael Hartl"
+      about: "概要"
+      contact: "お問い合わせ"
+      news: "ニュース"

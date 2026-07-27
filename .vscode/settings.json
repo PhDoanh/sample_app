@@ -1,0 +1,16 @@
+{
+  "explorer.confirmDelete": false,
+  "editor.tabSize": 2,
+  "explorer.confirmDragAndDrop": false,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "window.zoomLevel": 0,
+  "js/ts.format.enabled": false,
+  "js/ts.format.insertSpaceAfterCommaDelimiter": false,
+  "js/ts.format.insertSpaceAfterConstructor": false,
+  "[ruby]": {
+    "editor.formatOnSave": false
+  },
+}

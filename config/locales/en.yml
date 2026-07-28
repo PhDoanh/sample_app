@@ -27,10 +27,18 @@ en:
       description: "Contact the Ruby on Rails Tutorial about the sample app at the"
       contact_page_link: "contact page"
   users:
+    create:
+      flash_success: "Welcome to the Sample App!"
     new:
       title: "Sign up"
       heading: "Sign up"
-      description: "This will be a signup page for new user."
+      description: "This is a signup page for new user."
+      form:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Confirmation"
+        submit: "Create my account"
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
@@ -47,3 +55,23 @@ en:
       about: "About"
       contact: "Contact"
       news: "News"
+  shared:
+    error_messages:
+      message:
+        one: "The form contains 1 error."
+        other: "The form contains %{count} errors."
+  errors:
+    messages:
+      blank: "can't be blank"
+      invalid: "is invalid"
+      taken: "has already been taken"
+      too_long: "is too long (maximum is %{count} characters)"
+      too_short: "is too short (minimum is %{count} characters)"
+      confirmation: "doesn't match confirmation"
+  activerecord:
+    attributes:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Confirmation"

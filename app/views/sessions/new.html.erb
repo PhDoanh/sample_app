@@ -1,0 +1,19 @@
+<% provide(:title, t(".title")) %>
+<h1><%= t(".heading") %></h1>
+<p><%= t(".description") %></p>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_with(url: login_path, scope: :session) do |f| %>
+      <%= f.label :email, t(".form.email") %>
+      <%= f.email_field :email, class: "form-control" %>
+
+      <%= f.label :password, t(".form.password") %>
+      <%= f.password_field :password, class: "form-control" %>
+
+      <%= f.submit t(".form.submit"), class: "btn btn-primary" %>
+    <% end %>
+
+    <p><%= t(".signup_prompt") %> <%= link_to t(".signup"), signup_path %></p>
+  </div>
+</div>

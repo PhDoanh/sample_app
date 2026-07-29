@@ -153,7 +153,10 @@ aside {
 }
 
 // forms
-input, textarea, select, .uneditable-input {
+input,
+textarea,
+select,
+.uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
@@ -176,5 +179,33 @@ input {
   @extend .has-error;
   .form-control {
     color: $state-danger-text;
+  }
+}
+
+// dropdown menu
+.dropdown-menu.active {
+  display: block;
+}
+
+@media (max-width: 800px) {
+
+  // Mobile footer fix
+  footer {
+    text-align: center;
+  }
+
+  footer small {
+    float: none;
+  }
+
+  footer ul {
+    float: none;
+    padding-left: initial;
+
+    li {
+      float: none;
+      margin-left: 0;
+      margin-bottom: 5px;
+    }
   }
 }

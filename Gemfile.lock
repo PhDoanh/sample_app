@@ -117,6 +117,7 @@ GEM
       activesupport (>= 5.0.0)
     json (2.6.3)
     language_server-protocol (3.17.0.3)
+    logger (1.7.0)
     loofah (2.21.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -149,6 +150,7 @@ GEM
     parser (3.2.2.3)
       ast (~> 2.4.1)
       racc
+    prism (1.9.0)
     public_suffix (5.0.3)
     puma (5.6.6)
       nio4r (~> 2.0)
@@ -190,6 +192,10 @@ GEM
       zeitwerk (~> 2.5)
     rainbow (3.1.1)
     rake (13.0.6)
+    rbs (4.1.0)
+      logger
+      prism (>= 1.6.0)
+      tsort
     regexp_parser (2.8.1)
     reline (0.3.7)
       io-console (~> 0.5)
@@ -214,6 +220,12 @@ GEM
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.7.0, < 2.0)
+    ruby-lsp (0.26.10)
+      language_server-protocol (~> 3.17.0)
+      prism (>= 1.2, < 2.0)
+      rbs (>= 3, < 5)
+    ruby-lsp-rails (0.4.8)
+      ruby-lsp (>= 0.26.0, < 0.27.0)
     ruby-progressbar (1.13.0)
     rubyzip (2.3.2)
     sassc (2.4.0)
@@ -240,6 +252,7 @@ GEM
     thor (1.2.2)
     tilt (2.8.0)
     timeout (0.4.0)
+    tsort (0.2.0)
     turbo-rails (1.4.0)
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
@@ -283,6 +296,8 @@ DEPENDENCIES
   rubocop (~> 1.26)
   rubocop-checkstyle_formatter
   rubocop-rails (~> 2.14.0)
+  ruby-lsp
+  ruby-lsp-rails
   sassc-rails
   selenium-webdriver
   sprockets-rails

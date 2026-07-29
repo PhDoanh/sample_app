@@ -47,6 +47,9 @@ ja:
       home: "ホーム"
       help: "ヘルプ"
       log_in: "ログイン"
+      log_out: "ログアウト"
+      settings: "設定"
+      profile: "プロフィール"
     footer:
       the: ""
       tutorial_link: "Ruby on Rails Tutorial"
@@ -55,6 +58,20 @@ ja:
       about: "概要"
       contact: "お問い合わせ"
       news: "ニュース"
+  sessions:
+    create:
+      flash_success: "ログインしました!"
+      flash_danger: "メールアドレスまたはパスワードが正しくありません。"
+    new:
+      title: "ログイン"
+      heading: "ログイン"
+      description: "既存のユーザー用のログインページです。"
+      form:
+        email: "メールアドレス"
+        password: "パスワード"
+        submit: "ログイン"
+      signup: "今すぐ登録!"
+      signup_prompt: "新規ユーザーですか?"
   shared:
     error_messages:
       message:

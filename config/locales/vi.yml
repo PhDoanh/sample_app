@@ -70,6 +70,7 @@ vi:
         email: "Địa chỉ Email"
         password: "Mật khẩu"
         submit: "Đăng nhập"
+        remember_me: "Ghi nhớ trạng thái đăng nhập"
       signup: "Đăng ký ngay!"
       signup_prompt: "Người dùng mới?"
   shared:

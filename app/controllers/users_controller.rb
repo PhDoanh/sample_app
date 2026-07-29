@@ -4,8 +4,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find_by params[:id]
-    redirect_to root_path, status: :see_other if @user.nil?
+    @user = User.find_by id: params[:id]
+    redirect_to root_path, status: :see_other unless @user
   end
 
   def create

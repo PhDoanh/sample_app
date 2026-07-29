@@ -75,6 +75,7 @@ en:
         email: "Email"
         password: "Password"
         submit: "Log in"
+        remember_me: "Remember me"
       signup: "Sign up now!"
       signup_prompt: "New user?"
   errors:

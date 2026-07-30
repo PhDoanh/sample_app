@@ -29,6 +29,7 @@ en:
   users:
     create:
       flash_success: "Welcome to the Sample App!"
+      flash_info: "Please check your email to activate your account."
     update:
       flash_success: "Profile updated"
     destroy:
@@ -89,6 +90,7 @@ en:
     create:
       flash_success: "You have successfully logged in."
       flash_danger: "Invalid email or password."
+      flash_warning: "Account not activated. Check your email for the activation link."
     new:
       title: "Log in"
       heading: "Log in"
@@ -100,6 +102,22 @@ en:
         remember_me: "Remember me"
       signup: "Sign up now!"
       signup_prompt: "New user?"
+  account_activations:
+    flash_success: "Account activated!"
+    flash_danger: "Invalid activation link"
+  user_mailer:
+    account_activation:
+      subject: "Account activation"
+      heading: "Activate your account"
+      greeting: "Hi %{name},"
+      description: "Welcome to the Sample App! Click the link below to activate your account:"
+      activate_account: "Activate my account"
+    password_reset:
+      subject: "Password reset"
+      heading: "Reset your password"
+      greeting: "Hi %{name},"
+      description: "You have requested to reset your password. Click the link below to proceed:"
+      reset_password: "Reset my password"
   errors:
     messages:
       blank: "can't be blank"

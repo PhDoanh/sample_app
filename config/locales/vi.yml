@@ -29,16 +29,37 @@ vi:
   users:
     create:
       flash_success: "Chào mừng bạn đến với Ứng dụng mẫu!"
+    update:
+      flash_success: "Hồ sơ đã được cập nhật"
+    destroy:
+      flash_success: "Người dùng đã được xóa"
+      flash_danger: "Lỗi khi xóa người dùng."
+    logged_in_user:
+      flash_danger: "Vui lòng đăng nhập."
+    index:
+      title: "Tất cả người dùng"
+      heading: "Tất cả người dùng"
+      description: "Đây là trang chỉ mục cho tất cả người dùng."
     new:
       title: "Đăng ký"
       heading: "Đăng ký"
       description: "Đây là trang đăng ký cho người dùng mới."
       form:
-        name: "Tên"
-        email: "Địa chỉ Email"
-        password: "Mật khẩu"
-        password_confirmation: "Xác nhận mật khẩu"
         submit: "Tạo tài khoản"
+    edit:
+      title: "Sửa hồ sơ"
+      heading: "Cập nhật hồ sơ của bạn"
+      description: "Đây là trang chỉnh sửa cho người dùng hiện tại."
+      form:
+        submit: "Lưu thay đổi"
+    form:
+      name: "Tên"
+      email: "Địa chỉ Email"
+      password: "Mật khẩu"
+      password_confirmation: "Xác nhận mật khẩu"
+    user:
+      delete: "Xóa"
+      confirm_delete: "Bạn chắc chắn muốn xóa chứ?"
   layouts:
     application:
       base_title: "Ứng dụng mẫu Ruby on Rails Tutorial"
@@ -46,6 +67,7 @@ vi:
       logo: "ứng dụng mẫu"
       home: "Trang chủ"
       help: "Trợ giúp"
+      users: "Người dùng"
       log_in: "Đăng nhập"
       log_out: "Đăng xuất"
       settings: "Cài đặt"

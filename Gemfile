@@ -49,12 +49,16 @@ gem "config"
 # Use Active Model has_secure_password
 gem "bcrypt", "~> 3.1.7"
 
+# Pagination
+gem "pagy", "~> 43.4"
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html]
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html
   gem "debug", platforms: %i(mri mingw x64_mingw)
+  gem "faker", "2.21.0"
   gem "rubocop", "~> 1.26", require: false
   gem "rubocop-checkstyle_formatter", require: false
   gem "rubocop-rails", "~> 2.14.0", require: false

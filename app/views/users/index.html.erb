@@ -1,0 +1,11 @@
+<% provide(:title, t(".title")) %>
+<h1><%= t(".heading") %></h1>
+<p><%= t(".description") %></p>
+
+<%== @pagy.series_nav %>
+
+<ul class="users">
+  <%= render @users %>
+</ul>
+
+<%== @pagy.series_nav %>

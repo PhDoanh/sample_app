@@ -11,7 +11,7 @@ url:
   news: "https://news.railstutorial.org"
   rubyonrails: "https://rubyonrails.org"
   guides: "https://guides.rubyonrails.org"
-  gravatar: "https://secure.gravatar.com/avatar/%{gravatar_id}?s=%{size}"
+  gravatar_template: "https://secure.gravatar.com/avatar/%{gravatar_id}?s=%{size}"
 path:
   rails_logo: "rails.png"
 regex:
@@ -24,4 +24,6 @@ user:
   password:
     min_length: 6
   gravatar:
-    size: 80
+    medium_size: 80
+    small_size: 50
+users_per_page: 10

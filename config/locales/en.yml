@@ -100,11 +100,36 @@ en:
         password: "Password"
         submit: "Log in"
         remember_me: "Remember me"
+        forgot_password: "Forgot password?"
       signup: "Sign up now!"
       signup_prompt: "New user?"
   account_activations:
     flash_success: "Account activated!"
     flash_danger: "Invalid activation link"
+  password_resets:
+    new:
+      title: "Forgot password"
+      heading: "Forgot password"
+      description: "This is a forgot password page for existing user."
+      form:
+        email: "Email"
+        submit: "Submit"
+    edit:
+      title: "Reset password"
+      heading: "Reset password"
+      description: "This is a reset password page for existing user."
+      form:
+        password: "Password"
+        password_confirmation: "Confirmation"
+        submit: "Update password"
+    create:
+      flash_info: "Email sent with password reset instructions"
+      flash_danger: "Email address not found"
+    update:
+      flash_success: "Password has been reset."
+      flash_danger: "Password reset failed."
+    check_expiration:
+      flash_danger: "Password reset link has expired."
   user_mailer:
     account_activation:
       subject: "Account activation"

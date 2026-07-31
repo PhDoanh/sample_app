@@ -100,11 +100,36 @@ ja:
         password: "パスワード"
         submit: "ログイン"
         remember_me: "ログイン状態を保持する"
+        forgot_password: "パスワードを忘れた場合"
       signup: "今すぐ登録!"
       signup_prompt: "新規ユーザーですか?"
   account_activations:
     flash_success: "アカウントが有効化されました!"
     flash_danger: "無効なアクティベーションリンクです"
+  password_resets:
+    new:
+      title: "パスワードを忘れた場合"
+      heading: "パスワードを忘れた場合"
+      description: "既存のユーザー用のパスワード忘れた場合ページです。"
+      form:
+        email: "メールアドレス"
+        submit: "送信"
+    edit:
+      title: "パスワードをリセット"
+      heading: "パスワードをリセット"
+      description: "既存のユーザー用のパスワードリセットページです。"
+      form:
+        password: "パスワード"
+        password_confirmation: "確認用パスワード"
+        submit: "パスワードを更新"
+    create:
+      flash_info: "パスワードリセットの手順を記載したメールを送信しました"
+      flash_danger: "メールアドレスが見つかりません"
+    update:
+      flash_success: "パスワードがリセットされました。"
+      flash_danger: "パスワードのリセットに失敗しました。"
+    check_expiration:
+      flash_danger: "パスワードリセットリンクの有効期限が切れています。"
   user_mailer:
     account_activation:
       subject: "アカウントの有効化"

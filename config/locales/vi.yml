@@ -100,11 +100,36 @@ vi:
         password: "Mật khẩu"
         submit: "Đăng nhập"
         remember_me: "Ghi nhớ trạng thái đăng nhập"
+        forgot_password: "Quên mật khẩu?"
       signup: "Đăng ký ngay!"
       signup_prompt: "Người dùng mới?"
   account_activations:
     flash_success: "Tài khoản đã được kích hoạt!"
     flash_danger: "Liên kết kích hoạt không hợp lệ"
+  password_resets:
+    new:
+      title: "Quên mật khẩu"
+      heading: "Quên mật khẩu"
+      description: "Đây là trang quên mật khẩu cho người dùng hiện tại."
+      form:
+        email: "Địa chỉ Email"
+        submit: "Gửi yêu cầu"
+    edit:
+      title: "Khôi phục mật khẩu"
+      heading: "Khôi phục mật khẩu"
+      description: "Đây là trang khôi phục mật khẩu cho người dùng hiện tại."
+      form:
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
+        submit: "Cập nhật mật khẩu"
+    create:
+      flash_info: "Email đã được gửi với hướng dẫn khôi phục mật khẩu"
+      flash_danger: "Không tìm thấy địa chỉ email"
+    update:
+      flash_success: "Mật khẩu đã được khôi phục."
+      flash_danger: "Khôi phục mật khẩu thất bại."
+    check_expiration:
+      flash_danger: "Liên kết khôi phục mật khẩu đã hết hạn."
   user_mailer:
     account_activation:
       subject: "Kích hoạt tài khoản"

@@ -1,0 +1,4 @@
+translations:
+  - file: public/locales/:locale.json
+    patterns:
+      - "*.js.*"

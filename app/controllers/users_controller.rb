@@ -5,7 +5,11 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @pagy, @users = pagy(:offset, User.newest, limit: Settings.users_per_page)
+    @pagy, @users = pagy(
+      :offset,
+      User.newest,
+      limit: Settings.users_per_page
+    )
   end
 
   def new
@@ -13,7 +17,11 @@ class UsersController < ApplicationController
   end
 
   def show
-    redirect_to root_path, status: :see_other unless @user
+    @pagy, @microposts = pagy(
+      :offset,
+      @user.microposts,
+      limit: Settings.microposts_per_page
+    )
   end
 
   def create
@@ -58,12 +66,10 @@ class UsersController < ApplicationController
 
   def load_user
     @user = User.find_by id: params[:id]
-    return if @user
-
-    redirect_to root_path, status: :see_other
+    redirect_to root_path, status: :see_other unless @user
   end
 
   def correct_user
-    redirect_to root_path, status: :see_other unless current_user?(@user)
+    redirect_to root_path, status: :see_other unless current_user? @user
   end
 end

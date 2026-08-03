@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: %i(index edit update destroy)
-  before_action :load_user, only: %i(show edit update destroy)
+  before_action :logged_in_user, only:
+    %i(index edit update destroy following followers)
+  before_action :load_user, only:
+    %i(show edit update destroy following followers)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
@@ -19,9 +21,10 @@ class UsersController < ApplicationController
   def show
     @pagy, @microposts = pagy(
       :offset,
-      @user.microposts,
+      @user.microposts.recent,
       limit: Settings.microposts_per_page
     )
+    @users = @user.followers
   end
 
   def create
@@ -54,6 +57,26 @@ class UsersController < ApplicationController
       flash[:danger] = t(".flash_danger")
     end
     redirect_to users_path, status: :see_other
+  end
+
+  def following
+    @title = t(".title")
+    @pagy, @users = pagy(
+      :offset,
+      @user.following,
+      limit: Settings.users_per_page
+    )
+    render "show_follow", status: :unprocessable_entity
+  end
+
+  def followers
+    @title = t(".title")
+    @pagy, @users = pagy(
+      :offset,
+      @user.followers,
+      limit: Settings.users_per_page
+    )
+    render "show_follow", status: :unprocessable_entity
   end
 
   private

@@ -28,6 +28,7 @@ ja:
       description: "サンプルアプリに関するお問い合わせは"
       contact_page_link: "お問い合わせページ"
   users:
+    # from controllers
     create:
       flash_success: "サンプルアプリへようこそ!"
       flash_info: "アカウントを有効化するには、メールを確認してください。"
@@ -38,6 +39,12 @@ ja:
       flash_danger: "ユーザーの削除に失敗しました。"
     logged_in_user:
       flash_danger: "ログインしてください。"
+    following:
+      title: "フォロー中"
+    followers:
+      title: "フォロワー"
+
+    # from views
     index:
       title: "すべてのユーザー"
       heading: "すべてのユーザー"
@@ -65,6 +72,10 @@ ja:
     user:
       delete: "削除"
       confirm_delete: "本当に削除しますか？"
+    follow:
+      submit: "フォロー"
+    unfollow:
+      submit: "フォロー解除"
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial サンプルアプリケーション"
@@ -107,6 +118,9 @@ ja:
     micropost_form:
       placeholder: "新しいマイクロポストを投稿..."
       submit: "投稿"
+    stats:
+      following: "フォロー中"
+      followers: "フォロワー"
   sessions:
     create:
       flash_success: "ログインしました!"

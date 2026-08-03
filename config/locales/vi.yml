@@ -28,6 +28,7 @@ vi:
       description: "Liên hệ với Ruby on Rails Tutorial về ứng dụng mẫu tại"
       contact_page_link: "trang liên hệ"
   users:
+    # from controllers
     create:
       flash_success: "Chào mừng bạn đến với Ứng dụng mẫu!"
       flash_info: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản."
@@ -38,6 +39,12 @@ vi:
       flash_danger: "Lỗi khi xóa người dùng."
     logged_in_user:
       flash_danger: "Vui lòng đăng nhập."
+    following:
+      title: "Đang theo dõi"
+    followers:
+      title: "Người theo dõi"
+
+    # from views
     index:
       title: "Tất cả người dùng"
       heading: "Tất cả người dùng"
@@ -65,6 +72,10 @@ vi:
     user:
       delete: "Xóa"
       confirm_delete: "Bạn chắc chắn muốn xóa chứ?"
+    follow:
+      submit: "Theo dõi"
+    unfollow:
+      submit: "Hủy theo dõi"
   layouts:
     application:
       base_title: "Ứng dụng mẫu Ruby on Rails Tutorial"
@@ -100,13 +111,16 @@ vi:
         one: "Biểu mẫu chứa 1 lỗi."
         other: "Biểu mẫu chứa %{count} lỗi."
     user_info:
-      view_profile: "xem hồ sơ của tôi"
+      view_profile: "xem hồ sơ"
       micropost_count:
         one: "1 bài đăng"
         other: "%{count} bài đăng"
     micropost_form:
       placeholder: "Viết bài đăng mới..."
       submit: "Đăng"
+    stats:
+      following: "đang theo dõi"
+      followers: "người theo dõi"
   sessions:
     create:
       flash_success: "Bạn đã đăng nhập!"
